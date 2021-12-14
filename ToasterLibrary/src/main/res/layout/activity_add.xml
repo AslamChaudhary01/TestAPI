@@ -4,22 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     tools:context=".AddActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Addition "/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginHorizontal="40dp"
+        >
 
     <EditText
         android:id="@+id/et_1"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@null"
+        android:paddingLeft="20dp"
+        android:inputType="number"
+        android:hint="Number 01"
+        android:textSize="12sp"
+        android:background="@drawable/edittext_round"
         />
 
     <EditText
         android:id="@+id/et_2"
         android:layout_below="@id/et_1"
+        android:hint="Number 02 "
+        android:paddingLeft="20dp"
+        android:inputType="number"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@null"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_round"
+
         />
 
     <Button
@@ -27,7 +55,12 @@
         android:layout_below="@id/et_2"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_round"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_700"
         android:text="add"/>
 
 
+</RelativeLayout>
 </RelativeLayout>
