@@ -14,12 +14,7 @@ public class AddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding= ActivityAddBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-
-
-
     }
-
 //    public static void sum(){
 //        binding.btnAdd.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -31,7 +26,7 @@ public class AddActivity extends AppCompatActivity {
 //    }
 
 
-    void getSum(SumCallBack sumCallBack){
+    public void getSum(SumCallBack sumCallBack){
         sumCallBack.getSum(Integer.parseInt(binding.et1.getText().toString())
                 +Integer.parseInt(binding.et2.getText().toString()));
     }
